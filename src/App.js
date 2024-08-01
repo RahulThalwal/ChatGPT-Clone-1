@@ -15,9 +15,6 @@ import { useState } from 'react';
 function App() {
 const [input,setInput] = useState("");
 
-
-
-
   const handleSend = async () => {
     const res = await sendMsgToOpenAI(input);
     console.log(res);
